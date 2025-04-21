@@ -21,12 +21,14 @@ Welcome to **Popcorn Picks**, a stylish and dynamic movie web application built 
 
 ---
 
-## 🧩 Technologies Used
--React.js (with Vite)
--Tailwind CSS
--TMDB API
--GSAP (for animations)
--React Router DOM
+## 🛠 Tech Stack
+
+- ⚛️ React.js
+- 💅 Tailwind CSS
+- 🎥 TMDb API
+- 🔁 Axios
+- 🧠 GSAP (for animations)
+- 📦 LocalStorage (for watchlist persistence)
 
 ---
 
