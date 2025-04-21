@@ -4,7 +4,7 @@ import SearchInput from './SearchInput.jsx';
 import {useWindowScroll} from 'react-use';
 import gsap from 'gsap';
 
-const navItems =['Movies', 'TV Shows', 'Watchlist'];
+const navItems =['Movies', 'TV-Shows', 'Watchlist'];
 
 function Header(){
     const [isAudioPlaying,setisAudioPlaying] = useState(false);

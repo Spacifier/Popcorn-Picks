@@ -46,7 +46,7 @@ function Explore() {
   }
 
   return (
-      <section className="bg-[#32312f] pb-42">
+      <section className="bg-[#32312f] pb-42" id="explore">
         <div className="container mx-auto px-3 md:px-10">
             <div className="py-32">
                 <p className="font-[circular-web] text-lg text-[#fef8ec]">

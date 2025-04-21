@@ -17,6 +17,29 @@ export const fetchTrendingNow = async () => {
   return res.data.results;
 };
 
+export const fetchDiscoverMovies = async (page = 1) => {
+  const res = await axios.get(`${BASE_URL}/discover/movie`, {
+    params: {
+      api_key: API_KEY,
+      page,
+      include_adult: false,
+    },
+  });
+  return res.data;
+};
+
+export const fetchDiscoverTv = async (page=1) => {
+  const res = await axios.get(`${BASE_URL}/discover/tv`, {
+    params: {
+      api_key: API_KEY,
+      page,
+      include_adult: 'false',
+      'first_air_date.gte': '2016-01-01',
+    },
+  });
+  return res.data;
+};
+
 export const fetchTrendingMovies = async () => {
   const res = await axios.get(`${BASE_URL}/trending/movie/week`, {
     params: { api_key: API_KEY },
@@ -73,25 +96,27 @@ export const fetchPopularTv = async () => {
   return res.data.results;
 };
 
-export const fetchSearch = async (query) => {
+export const fetchSearch = async (query,page=1) => {
   const res = await axios.get(`${BASE_URL}/search/multi`, {
     params: { 
       api_key: API_KEY,
       query: query,
+      page,
      },
   });
-  return res.data.results;
+  return res.data;
 };
 
 
-export const fetchMoviesByGenre = async (genreId) => {
+export const fetchMoviesByGenre = async (genreId,page=1) => {
   const res = await axios.get(`${BASE_URL}/discover/movie`, {
     params: { 
       api_key: API_KEY,
+      page,
       with_genres: genreId,
      },
   });
-  return res.data.results;
+  return res.data;
 };
 
 export const fetchTrailer= async(movieId) => {
