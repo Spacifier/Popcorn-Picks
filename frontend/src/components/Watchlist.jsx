@@ -78,7 +78,7 @@ const Watchlist = () => {
                 </p>
               </div>
             ) : (
-              <div className="movie-grid grid sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 p-8 max-w-7xl mx-auto">
+              <div className="movie-grid grid sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols7 gap-6 p-8 max-w-7xl mx-auto">
                 {watchlist.map((movie) => (
                   <MovieCard
                     key={movie.id}

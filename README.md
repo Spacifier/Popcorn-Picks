@@ -10,6 +10,13 @@ Welcome to **Popcorn Picks**, a stylish and dynamic movie web application built 
 
 ---
 
+
+## 🖼️ Live Demo
+
+> ⚡[Popcorn Picks](https://popcorn-picks-virid.vercel.app/)
+
+---
+
 ## 🌟 Features
 
 - 🔍 **Search Movies** – Real-time search through TMDB.

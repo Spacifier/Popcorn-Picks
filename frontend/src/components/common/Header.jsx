@@ -78,7 +78,7 @@ function Header(){
                                 </NavLink>
                              ))}
                         </div>
-                        <button className="ml-10 flex items-center space-x-0.5 cursor-pointer" onClick={toggleAudioIndicator}>
+                        <button title='bg-music' className="ml-10 flex items-center space-x-0.5 cursor-pointer" onClick={toggleAudioIndicator}>
                             <audio src="/audio/loop.mp3" ref={audioElementRef} className="hidden" loop />
                                 {[1,2,3,4].map((bar) => (
                                     <div key={bar} 
